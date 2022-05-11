@@ -18,3 +18,4 @@ search.addEventListener('submit', (event)=> {
     query = document.querySelector('#city').value;
     meteoDay()
 })
+
