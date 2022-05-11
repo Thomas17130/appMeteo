@@ -4,8 +4,9 @@ let url = `hhtp://api.weatherstack.com/current?access_key=${apiKey}&query=${quer
 
 const search = document.getElementById("search");
 
+const fetchMeteo = async ()=>
 search.addEventListener('submit', (event)=> {
     event.preventDefault();
     query = document.querySelector('#city').value;
     console.log(query);
-}) 
+})  
