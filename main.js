@@ -1,6 +1,9 @@
 let query = "";
 let apiKey = "870497d4cbd4ab3e7f3141e5439ffad1";
 let url = `http://api.weatherstack.com/current?access_key=${apiKey}&query=${query}`
+let meteoTable = document.querySelector('meteoTable');
+let current = [];
+let name = [];
 
 const search = document.getElementById("search");
 
@@ -9,8 +12,20 @@ const fetchMeteo = async () => {
 }
 
 const meteoDay = async () => {
-    await fetchMeteo()
+    await fetchMeteo();
     console.log(meteo)
+
+meteoTable.innerHTML = location.name.map(
+    (location)=>
+    `<div>  
+        <h2>${location.name}</h2>
+    </div>`
+    ).join("")
+    //(picture)=>    
+    // <div>
+    //     <h2>${newDate}</h2>
+    //     <img src="${picture.img_src}" alt="${picture.camera.full_name}">
+    // </div>`
 }
 
 search.addEventListener('submit', (event)=> {
