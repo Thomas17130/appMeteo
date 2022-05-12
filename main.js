@@ -15,8 +15,8 @@ const meteoDay = async () => {
     await fetchMeteo();
     console.log(meteo)
 
-meteoTable.innerHTML = location.name.map(
-    (location)=>
+meteoTable.innerHTML = query.name.map(
+    (query)=>
     `<div>  
         <h2>${location.name}</h2>
     </div>`
