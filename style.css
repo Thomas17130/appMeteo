@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+<<<<<<< HEAD
 body{
     width: 100%;
     height: 100vh;
@@ -17,3 +18,5 @@ header h1{
     text-align: center;
     position: fixed;
 }
+=======
+>>>>>>> 3e70311e6ba38963e28723d04bc7e9d70295726c
